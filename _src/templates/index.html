@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Adalab Web Starter Kit</title>
+  <link rel="icon" href="favicon.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <form action="#" class="form">
+    <fieldset>
+      <legend>Datos personales</legend>
+      <div class="input1__container">
+          <label for="name" class="input1__container">Nombre</label>
+          <input id="name" name="name" type="text" class="input1" placeholder="Darth">
+        </div>
+        <div class="input2__container">
+          <label for="family-name" class="input2__container">Apellidos</label>
+          <input id="family-name" name="family-name" type="text" class="input2" placeholder="Vader">
+        </div>
+        <div class="input3__container">
+          <label for="address" class="input3__container">Dirección</label>
+          <input id="address" name="address" type="text" class="input3" placeholder="Galactic City, Coruscant system (Core Worlds)">
+        </div>
+        <div class="input4__container">
+          <label for="phone" class="input4__container">Teléfono</label>
+          <input id="phone" name="phone" type="number" class="input4" placeholder="123456789">
+        </div>
+        <div class="input5__container">
+          <label for="age" class="input5__container">Edad</label>
+          <input id="age" name="age" type="text" class="input5" placeholder="45">
+        </div>
+        <div class="input6__container">
+          <p class="genre">Sexo</p>
+          <label for="genre1" class="input6__container">
+            <input id="genre" name="genre" type="radio" class="input6">Hombre
+          </label>
+          <label for="genre2" class="input6__container">
+              <input id="genre" name="genre" type="radio" class="input6">Mujer
+          </label>
+          <label for="genre3" class="input6__container">
+            <input id="genre" name="genre" type="radio" class="input6">Prefiero no pronunciarme
+          </label>
+        </div>
+        <div class="input10__container">
+          <label for="photo" class="input10__container">Fotografía</label>
+          <input id="photo" name="photo" type="image" src="http://via.placeholder.com/150" alt="Imagen de perfil" class="input10">
+        </div>
+        <div class="input10__container">
+          <label for="email" class="input10__container">Email</label>
+          <input id="email" name="email" type="email" class="input10" placeholder="darth.vader@sci-fi.com">
+        </div>
+    </fieldset>
+    <fieldset>
+      <legend>Gustos filmográficos</legend>
+      <div class="input7__container">
+        <p class="film-genre1">Géneros favoritos</p>  
+        <label for="film-genre" class="input7__container">
+          <input id="film-genre" name="film-genre" type="checkbox" class="input7">Ciencia ficción
+        </label>
+        <label for="film-genre2" class="input7__container">
+          <input id="film-genre" name="film-genre" type="checkbox" class="input7">Comedias
+        </label>
+        <label for="film-genre2" class="input7__container">
+          <input id="film-genre" name="film-genre" type="checkbox" class="input7">Documentales
+        </label>
+        
+      </div>
+      <div class="input8__container">
+        <label for="favorite-movies" class="input8__container">Películas favoritas</label>
+        <select name="favorite-movies" size="5" multiple>
+          <option value="movie1">1</option>
+          <option value="movie2">2</option>
+          <option value="movie3">3</option>
+          <option value="movie4">4</option>
+          <option value="movie5">5</option>
+        </select>
+      </div>
+      <div class="input9__container">
+        <label for="favorite-series" class="input9__container">Series favoritas</label>
+        <select name="favorite-series" size="5" multiple>
+            <option value="series1">1</option>
+            <option value="series2">2</option>
+            <option value="series3">3</option>
+            <option value="series4">4</option>
+            <option value="series5">5</option>
+          </select>
+      </div>
+      <div class="input11__container">
+        <p class="paid-tv">Plataformas de pago</p>
+        <label for="paid-tv1" class="input11__container">
+          <input id="paid-tv" name="paid-tv" type="radio" class="input11">Sí
+        </label>
+        <label for="paid-tv1" class="input11__container">
+          <input id="paid-tv" name="paid-tv" type="radio" class="input11">No
+        </label>
+      </div>
+    </fieldset>
+    <div class="input12__container">
+      <label for="submit" class="input12__container">Botón de enviar</label>
+      <input id="submit" name="submit" type="submit" class="input12">
+    </div>
+  </form>
+</body>
+</html>
