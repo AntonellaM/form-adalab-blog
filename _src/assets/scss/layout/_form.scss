@@ -1,0 +1,36 @@
+.input {
+    @include inputs;
+}
+
+.input6__container, .input7__container {
+    @include flexCenter;
+    justify-content: space-between;
+    font-family: $font-input;
+    font-weight: 400;
+}
+
+.input8__container, .input9__container {
+    @include flexCenter;
+    justify-content: flex-start;
+}
+
+.input11__container {
+    @extend .input6__container;
+    justify-content: flex-start;
+
+    .payment__option {
+        padding: 0 15px;
+    }
+}
+
+.input12__container {
+    @include flexCenter;
+}
+
+#photo {
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    padding: 0;
+}
+

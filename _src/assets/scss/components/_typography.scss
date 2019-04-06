@@ -1,0 +1,36 @@
+.title {
+    font-family: $font-title;
+    font-size: 24px;
+    line-height: $font-titleLineHeight;
+    font-weight: 700;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.title2 {
+    padding-top: 25px;
+}
+
+.subtitle {
+    @extend .title;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+option {
+    @include inputs;
+    padding: 5px 10px;
+}
+
+.checkbox-text, .radio-text {
+    @include inputs;
+    width: auto;
+    display: inline-block;
+    border: none;
+}
+
+.radio {
+    font-family: $font-input;
+}
