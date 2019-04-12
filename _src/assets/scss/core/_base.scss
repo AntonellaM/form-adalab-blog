@@ -4,19 +4,16 @@
     box-sizing: border-box;
 }
 
-.main-container {
-    background-color: lightgrey;
+.page__container {
+    @include flexCenter;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #247d95, #1d8399, #16899c, #0e8e9f, #0594a1, #009ba3, #00a3a5, #01aaa5, #1cb5a4, #34bfa0, #4dc99b, #65d294);
 }
 
-.form {
-    padding: 15px;
-    border-style: none;
-    border: none;
-    padding: 10px;
-}
-
-.personal-data, .personal-tastes {
-    @extend .form;
+.page__title {
+    margin: 30px;
+    font-family: $font-title;
+    font-size: 45px;
 }
 
 .visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
