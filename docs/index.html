@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Adalab Web Starter Kit</title>
+        <link rel="icon" href="favicon.png" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400|Roboto+Slab:400,700"
+        rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    
+    <body class="page__container">
+         <h1 class="page__title">¿Qué película vemos este finde?</h1>
+
+        <form action="#" class="form">
+            <fieldset class="form__personal-data">
+                <legend class="title">Datos personales</legend>
+                <div class="input1__container">
+                    <label for="name" class="input1__container subtitle">Nombre</label>
+                    <input id="name" name="name" type="text" class="input" placeholder="Darth">
+                </div>
+                <div class="input2__container">
+                    <label for="family-name" class="input2__container subtitle">Apellidos</label>
+                    <input id="family-name" name="family-name" type="text"
+                    class="input" placeholder="Vader">
+                </div>
+                <div class="input3__container">
+                    <label for="address" class="input3__container subtitle">Dirección</label>
+                    <input id="address" name="address" type="text" class="input"
+                    placeholder="Galactic City, Coruscant system (Core Worlds)">
+                </div>
+                <div class="input4__wrapper">
+                    <div class="input4__container">
+                        <label for="phone" class="input4__container subtitle">Teléfono</label>
+                        <input id="phone" name="phone" type="tel" class="input"
+                        placeholder="123456789">
+                    </div>
+                    <div class="input5__container">
+                        <label for="email" class="input5__container subtitle">Email</label>
+                        <input id="email" name="email" type="email" class="input"
+                        placeholder="darth.vader@sci-fi.com">
+                    </div>
+                </div>
+                <div class="input6__wrapper">
+                    <div class="input7__container">
+                        <p class="genre subtitle">Sexo</p>
+                        <div class="radio">
+                            <div class="radio__container">
+                                <input id="genre" name="genre" type="radio" class="radio"> <span class="checkmark__radio"></span>
+
+                            </div>
+                            <label for="genre1" class="input7__option">Hombre</label>
+                        </div>
+                        <div class="radio">
+                            <div class="radio__container">
+                                <input id="genre" name="genre" type="radio" class="radio"> <span class="checkmark__radio"></span>
+
+                            </div>
+                            <label for="genre2" class="input7__option">Mujer</label>
+                        </div>
+                        <div class="radio">
+                            <div class="radio__container">
+                                <input id="genre" name="genre" type="radio" class="radio"> <span class="checkmark__radio"></span>
+
+                            </div>
+                            <label for="genre3" class="input7__option">Prefiero no pronunciarme</label>
+                        </div>
+                    </div>
+                    <div class="input6__container">
+                        <label for="age" class="input6__container subtitle">Edad</label>
+                        <input id="age" name="age" type="text" class="input" placeholder="45">
+                    </div>
+                </div>
+                <div class="input8__container">
+                    <label for="photo" class="input8__container subtitle">Fotografía</label>
+                    <div class="photo__container">
+                        <input class="button js__profile-trigger" id="img-profile" type="button"
+                        value="Añadir imagen" name="img-profile" />
+                        <input name="photo" type="file" name="" id="img-selector" class="visually-hidden js__profile-upload-btn">
+                        <div id="photo" class="js__profile-image photo__container--picture"></div>
+                    </div>
+            </fieldset>
+            <fieldset class="form__personal-tastes">
+                <legend class="title title2">Gustos filmográficos</legend>
+                <ul class="input9__container">
+                    <li class="list-item movie__genre1">Acción</li>
+                    <li class="list-item movie__genre2">Animación</li>
+                    <li class="list-item movie__genre3">Aventuras</li>
+                    <li class="list-item movie__genre4">Bélico</li>
+                    <li class="list-item movie__genre5">Ficción</li>
+                    <li class="list-item movie__genre6">Comedia</li>
+                    <li class="list-item movie__genre7">Drama</li>
+                    <li class="list-item movie__genre8">Fantasía</li>
+                    <li class="list-item movie__genre9">Histórico</li>
+                    <li class="list-item movie__genre10">Infantil</li>
+                    <li class="list-item movie__genre11">Musical</li>
+                    <li class="list-item movie__genre12">Policíaco</li>
+                    <li class="list-item movie__genre13">Romántico</li>
+                    <li class="list-item movie__genre14">Suspense</li>
+                    <li class="list-item movie__genre15">Terror</li>
+                    <li class="list-item movie__genre16">Western</li>
+                </ul>
+                <div class="favorite-lists__container">
+                    <div class="input10__container">
+                        <label for="favorite-movies" class="input10__container subtitle">Pelis favoritas</label>
+                        <select name="favorite-movies" size="5" multiple>
+                            <option value="movie1">Shutter Island</option>
+                            <option value="movie2">The Prestige</option>
+                            <option value="movie3">Star Wars</option>
+                            <option value="movie4">Harry Potter</option>
+                            <option value="movie5">La la land</option>
+                        </select>
+                    </div>
+                    <div class="input11__container">
+                        <label for="favorite-series" class="input11__container subtitle">Series favoritas</label>
+                        <select name="favorite-series" size="5" multiple>
+                            <option value="series1">The Big Bang Theory</option>
+                            <option value="series2">Friends</option>
+                            <option value="series3">How I met your mother</option>
+                            <option value="series4">Walking Dead</option>
+                            <option value="series5">Orange Is the New Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input12__container">
+                    <p class="paid-tv subtitle">Plataformas de pago</p>
+                    <div class="radio__container">
+                        <input id="paid-tv1" name="paid-tv" type="radio" class="radio"> <span class="checkmark__radio"></span>
+
+                    </div>
+                    <label for="paid-tv1" class="input13__container payment__option">Sí</label>
+                    <div class="radio__container">
+                        <input id="paid-tv2" name="paid-tv" type="radio" class="radio"> <span class="checkmark__radio"></span>
+
+                    </div>
+                    <label for="paid-tv2" class="input13__container payment__option">No</label>
+                </div>
+            </fieldset>
+            <div class="input13__container">
+                <label for="submit" class="input13__container visually-hidden">Botón de enviar</label>
+                <input id="submit" name="submit" type="submit"
+                class="button">
+                <input id="reset" name="reset" type="reset" class="button">
+            </div>
+        </form>
+    </body>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</html>

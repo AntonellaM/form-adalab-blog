@@ -1,0 +1,1 @@
+"use strict";console.log(">> Ready :)");const listEls=document.querySelectorAll(".list-item");function listClickHandler(l){l.currentTarget.classList.toggle("list-selected")}console.log(listEls);for(let l=0;l<listEls.length;l++)listEls[l].addEventListener("click",listClickHandler);
