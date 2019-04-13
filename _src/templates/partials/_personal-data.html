@@ -1,0 +1,64 @@
+<fieldset class="form__personal-data">
+    <legend class="title">Datos personales</legend>
+    <div class="input1__container">
+        <label for="name" class="input1__container subtitle">Nombre</label>
+        <input id="name" name="name" type="text" class="input" placeholder="Darth">
+    </div>
+    <div class="input2__container">
+        <label for="family-name" class="input2__container subtitle">Apellidos</label>
+        <input id="family-name" name="family-name" type="text" class="input" placeholder="Vader">
+    </div>
+    <div class="input3__container">
+        <label for="address" class="input3__container subtitle">Dirección</label>
+        <input id="address" name="address" type="text" class="input"
+            placeholder="Galactic City, Coruscant system (Core Worlds)">
+    </div>
+    <div class="input4__wrapper">
+        <div class="input4__container">
+            <label for="phone" class="input4__container subtitle">Teléfono</label>
+            <input id="phone" name="phone" type="tel" class="input" placeholder="123456789">
+        </div>
+        <div class="input5__container">
+            <label for="email" class="input5__container subtitle">Email</label>
+            <input id="email" name="email" type="email" class="input" placeholder="darth.vader@sci-fi.com">
+        </div>
+    </div>
+    <div class="input6__wrapper">
+        <div class="input7__container">
+            <p class="genre subtitle">Sexo</p>
+            <div class="radio">
+                <div class="radio__container">
+                    <input id="genre" name="genre" type="radio" class="radio">
+                    <span class="checkmark__radio"></span>
+                </div>
+                <label for="genre1" class="input7__option">Hombre</label>
+            </div>
+            <div class="radio">
+                <div class="radio__container">
+                    <input id="genre" name="genre" type="radio" class="radio">
+                    <span class="checkmark__radio"></span>
+                </div>
+                <label for="genre2" class="input7__option">Mujer</label>
+            </div>
+            <div class="radio">
+                <div class="radio__container">
+                    <input id="genre" name="genre" type="radio" class="radio">
+                    <span class="checkmark__radio"></span>
+                </div>
+                <label for="genre3" class="input7__option">Prefiero no pronunciarme</label>
+            </div>
+        </div>
+        <div class="input6__container">
+            <label for="age" class="input6__container subtitle">Edad</label>
+            <input id="age" name="age" type="text" class="input" placeholder="45">
+        </div>    
+    </div>
+    <div class="input8__container">
+        <label for="photo" class="input8__container subtitle">Fotografía</label>
+        <div class="photo__container">
+            <input class="button js__profile-trigger" id="img-profile" type="button" value="Añadir imagen" name="img-profile"/>
+            <input name="photo" type="file" name="" id="img-selector" class="visually-hidden js__profile-upload-btn">
+            <div id="photo" class="js__profile-image photo__container--picture">
+        </div>
+    </div>
+</fieldset>

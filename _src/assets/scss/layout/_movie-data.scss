@@ -1,0 +1,73 @@
+.input9__container {
+    @include flexCenter;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.input10__container, .input11__container {
+    @include flexCenter;
+    justify-content: flex-start;
+    width: 50%;
+    display: block;
+
+    .subtitle {
+        width: 100%;
+    }
+}
+
+.input11__container {
+    margin-right: 30px;
+}
+
+.favorite-lists__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input12__container {
+    @extend .input6__container;
+    justify-content: flex-start;
+
+    .payment__option {
+        padding: 0 15px;
+    }
+}
+
+.input12__container {
+    @include flexCenter;
+    justify-content: flex-start;
+}
+
+.list-item {
+    @include flexCenter;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+%styleGenres {
+    font-family: $font-input;
+    border: 1px dotted lightblue;
+    background-color: rgb(227, 243, 248);
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+@for $i from 1 to 17 {
+    .movie__genre#{$i}{
+      @extend %styleGenres;
+      @include flexCenter;
+    }
+}
+
+.list-selected {
+    border: 2px solid #006675;
+    background-color: #3BA3A5;
+    color: white;
+    font-weight: 700;
+}
+
+

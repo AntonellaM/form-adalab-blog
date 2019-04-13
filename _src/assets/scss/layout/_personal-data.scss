@@ -1,0 +1,77 @@
+.input4__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  .input4__container {
+    margin-right: 10px;
+    flex-basis: 40%;
+  }
+  .input5__container {
+    margin-left: 10px;
+    flex-basis: 60%;
+
+    .subtitle {
+      margin: 10px 0;
+    }
+  }
+}
+
+.input6__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .input6__container {
+    margin-right: 20px;
+    flex-basis: 40%;
+    align-self: flex-start;
+
+    .subtitle {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 400;
+      display: block;
+      font-family: $font-title;
+    }
+  }
+
+  .input7__container {
+    margin-right: 10px;
+    flex-basis: 60%;
+
+    .radio {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .radio__container {
+      padding-right: 15px;
+    }
+
+    .input7__option {
+      align-self: center;
+    }
+
+    .subtitle {
+      margin-left: 5px;
+    }
+  }
+}
+
+.photo__container {
+  @include flexCenter;
+  flex-direction: column-reverse;
+  
+  &--picture {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/363e3e33850498.56ba69ac3183c.png");
+    background-size: cover;
+  }
+  .button {
+    width: 150px;
+    margin: 0;
+  }
+}
